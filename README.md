@@ -1,22 +1,82 @@
-# Credit Card Fraud Detection
+# Credit Card Fraud Detection Using Machine Learning
 
-## Description  
-This notebook builds a machine learning model to detect fraudulent credit card transactions using an imbalanced dataset. It explores data distribution, applies preprocessing techniques, and compares various classification algorithms to handle class imbalance and improve detection accuracy.  
-**[Dataset Source – Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)**
+## Problem Statement
+Credit card fraud detection is a critical challenge in the financial industry due to the highly imbalanced nature of transaction data—fraudulent transactions are rare but costly. This project aims to develop a machine learning pipeline to identify fraudulent credit card transactions using classification algorithms, feature scaling, and resampling techniques.
 
-## Objectives  
+---
+
+## Tools & Libraries Used
+- Python  
+- pandas, NumPy – Data loading and manipulation  
+- seaborn, matplotlib – Visualization  
+- scikit-learn – Machine learning models and evaluation
+  - LogisticRegression, RandomForestClassifier  
+  - classification_report, roc_auc_score, confusion_matrix  
+  - train_test_split, StandardScaler  
+- imbalanced-learn – SMOTE for handling class imbalance  
+- XGBoost – Gradient boosting classifier for performance on imbalanced data
+
+---
+
+## Dataset
+- Source: [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)  
+- Contains 284,807 transactions with only 492 labeled as fraudulent  
+- All features except 'Time' and 'Amount' are anonymized
+
+---
+
+## Project Description
+This notebook builds a machine learning model to detect fraudulent credit card transactions using a real-world imbalanced dataset. It explores the class imbalance, applies preprocessing steps such as feature scaling and oversampling, and compares multiple classification models. Final model performance is assessed using metrics suited for imbalanced datasets.
+
+---
+
+## Objectives
 - Understand the structure and imbalance of credit card transaction data  
-- Apply preprocessing techniques for feature scaling and resampling  
-- Build and evaluate machine learning models to detect fraud  
-- Compare model performance using precision, recall, F1-score, and ROC-AUC  
+- Perform exploratory data analysis (EDA)  
+- Apply feature scaling and SMOTE for preprocessing  
+- Train multiple classifiers and compare performance  
+- Evaluate models using precision, recall, F1-score, and ROC-AUC
 
-## Methodology / Steps  
-- Load and inspect the dataset (shape, class balance, sample entries)  
-- Perform exploratory data analysis (EDA) and visualize feature distributions  
-- Use techniques like SMOTE to balance class distribution  
-- Apply feature scaling using StandardScaler  
-- Train classification models including Logistic Regression, Random Forest, and XGBoost  
-- Evaluate models using confusion matrix, ROC-AUC curve, and classification reports  
+---
 
-## Tools & Libraries Used  
-Python, pandas, NumPy, seaborn, matplotlib, scikit-learn (LogisticRegression, RandomForestClassifier, classification_report, roc_auc_score, train_test_split, StandardScaler), imblearn (SMOTE), XGBoost
+## Methodology / Steps
+
+1. Load and Inspect the Dataset  
+   - Reviewed shape, null values, class distribution, and feature types
+
+2. Exploratory Data Analysis  
+   - Visualized class imbalance and distribution of key features
+
+3. Data Preprocessing  
+   - Used StandardScaler on 'Time' and 'Amount'  
+   - Applied SMOTE to oversample the minority class (fraudulent transactions)
+
+4. Model Training  
+   - Logistic Regression  
+   - Random Forest Classifier  
+   - XGBoost Classifier
+
+5. Model Evaluation  
+   - Confusion Matrix  
+   - Precision, Recall, and F1-score  
+   - ROC-AUC Curve  
+   - Classification Report
+
+---
+
+## Outcome
+- SMOTE significantly improved model sensitivity to fraudulent cases  
+- Random Forest and XGBoost outperformed Logistic Regression on recall and ROC-AUC  
+- Developed a scalable and interpretable fraud detection pipeline  
+- The methodology can be extended to other fraud or anomaly detection use cases
+
+---
+
+## How to Run
+1. Clone the repository  
+2. Install required libraries (scikit-learn, pandas, matplotlib, seaborn, imbalanced-learn, xgboost)  
+3. Open the notebook: `Credit Card Fraud Detection Model.ipynb`  
+4. Run all cells in Jupyter Notebook or Google Colab
+
+---
+
