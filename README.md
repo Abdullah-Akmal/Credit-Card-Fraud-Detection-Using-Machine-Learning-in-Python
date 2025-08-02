@@ -25,6 +25,15 @@ Credit card fraud presents a significant risk to financial institutions, leading
 
 ---
 
+## Objectives
+- Understand the structure and imbalance of credit card transaction data  
+- Perform exploratory data analysis (EDA)  
+- Apply feature scaling and SMOTE for preprocessing  
+- Train multiple classifiers and compare performance  
+- Evaluate models using precision, recall, F1-score, and ROC-AUC
+
+---
+
 ## Methodology / Steps
 
 1. Load and Inspect the Dataset  
