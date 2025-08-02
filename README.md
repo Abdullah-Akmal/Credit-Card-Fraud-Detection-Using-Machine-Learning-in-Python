@@ -25,20 +25,6 @@ Credit card fraud presents a significant risk to financial institutions, leading
 
 ---
 
-## Project Description
-This notebook builds a machine learning model to detect fraudulent credit card transactions using a real-world imbalanced dataset. It explores the class imbalance, applies preprocessing steps such as feature scaling and oversampling, and compares multiple classification models. Final model performance is assessed using metrics suited for imbalanced datasets.
-
----
-
-## Objectives
-- Understand the structure and imbalance of credit card transaction data  
-- Perform exploratory data analysis (EDA)  
-- Apply feature scaling and SMOTE for preprocessing  
-- Train multiple classifiers and compare performance  
-- Evaluate models using precision, recall, F1-score, and ROC-AUC
-
----
-
 ## Methodology / Steps
 
 1. Load and Inspect the Dataset  
