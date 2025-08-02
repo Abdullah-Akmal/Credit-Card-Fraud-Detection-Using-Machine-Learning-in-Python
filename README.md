@@ -1,7 +1,7 @@
 # Credit Card Fraud Detection Using Machine Learning
 
 ## Problem Statement
-Credit card fraud detection is a critical challenge in the financial industry due to the highly imbalanced nature of transaction data—fraudulent transactions are rare but costly. This project aims to develop a machine learning pipeline to identify fraudulent credit card transactions using classification algorithms, feature scaling, and resampling techniques.
+Credit card fraud presents a significant risk to financial institutions, leading to substantial monetary losses each year. The inherent imbalance in transaction data—where fraudulent events are exceedingly rare—impedes the ability of standard machine learning algorithms to detect anomalies with high accuracy. This project addresses these challenges by constructing a robust fraud-detection pipeline: it performs thorough EDA to understand data distributions, applies feature scaling and SMOTE oversampling to mitigate class imbalance, and evaluates multiple classifiers (Logistic Regression, Random Forest, XGBoost) using metrics such as precision, recall, F1-score, and ROC-AUC. The ultimate goal is to develop a reproducible, high-performance model capable of reliably identifying fraudulent transactions in real-world settings.
 
 ---
 
